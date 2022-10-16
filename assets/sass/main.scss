@@ -1,0 +1,152 @@
+
+@import "variables";
+@import "mixins";
+
+
+
+// BASE
+html {
+    scroll-behavior: smooth;
+}
+
+// SELECTION
+::selection {
+    background-color: $primary;
+    color: $base;
+}
+
+
+
+// BODY 
+body {
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    // HEADER SECTION START
+    .header {
+        border-bottom: 0.07em solid $focus-low;
+        .nav {
+            .nav-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                .brand {
+                    color: $secondary;
+                    text-decoration: none;
+                    @include fs-sm;
+                }
+                .link {
+                    text-decoration: none;
+                    @include fs-sm;
+                    color: $slight;
+                    border-bottom: 0.07em solid $base;
+                    &:hover {
+                        color: $text;
+                        border-color: $text;
+                    }
+                }
+            }
+        }
+    }
+    // HEADER SECTION END
+
+    // HERO SECTION START
+    .hero {
+        .hero-content {
+            .hero-title {
+                @include fs-xl;
+                color: $text;
+            }
+            .hero-description {
+                @include fs-md;
+                color: $slight;
+            }
+        }
+    }
+    // HERO SECTION END
+
+    // GLYPHS SECTION START
+    .glyphs {
+        .glyphs-content {
+            .glyphs-title-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .glyphs-title {
+                    @include fs-md;
+                    color: $secondary;
+                }
+                .line {
+                    height: 0.07em;
+                    width: 80%;
+                    background-color: $focus-low;
+                }
+            }
+            .all-glyphs {
+                .row {
+                    .col {
+                        .glyphs-symble {
+                            border: 0.07em solid $focus-low;
+                            @include fs-lg;
+                            color: $slight;
+                            &:hover {
+                                cursor: pointer;
+                                border-color: $slight;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // GLYPHS SECTION END
+
+    // MODAL SECTION START
+    .modal-section {
+        position: fixed;
+        bottom: 7%;
+        display: none;
+        .modal-text {
+            span {
+                @include fs-sm;
+                padding: 1em 2em;
+                color: $primary;
+                background-color: $interface;
+                border-bottom: 0.07em solid $primary;
+            }
+        }
+    }
+    .modal-section-active {
+        display: block;
+    }
+    // MODAL SECTION END
+
+    // FOOTER SECTION START
+    .footer {
+        border-top: 0.07em  solid $focus-low;
+        .footer-content {
+            a {
+                text-decoration: none;
+                color: $secondary;
+            }
+        }
+    }
+    // FOOTER SECTION END
+}
+
+
+// IMPORT NODE_MODULES SCSS FILE
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
+
+
+
+
+
+
+

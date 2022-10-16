@@ -1,0 +1,21 @@
+{
+  "name": "glyphsy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch ./assets/sass/main.scss ./assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.2.1",
+    "clipboard": "^2.0.11"
+  }
+}

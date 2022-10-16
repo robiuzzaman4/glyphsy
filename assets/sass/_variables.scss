@@ -1,0 +1,49 @@
+// SCSS-DOCS-START THEME-COLORS-MAP
+$primary:       #A78BFA;
+$secondary:     #9CCFD8;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary
+);
+
+// CUSTOM COLOR FROM - [SERENDIPTHY MIDNIGHT THEME]
+$base: #151726;
+$interface: #1C1E2D;
+$overlay: #232534;
+$text: #DEE0EF;
+$slight: #8D8F9E;
+$soft: #6B6D7C;
+$focus-low: #1F212F;
+$focus-medium: #3E404F;
+$focus-high: #535568;
+
+$custom-colors: (
+  "base":               $base,
+  "interface":          $interface,
+  "overlay":            $overlay,
+  "text":               $text,
+  "slight":             $slight,
+  "soft":               $soft,
+  "focus-low":          $focus-low,
+  "focus-medium":       $focus-medium,
+  "focus-high":         $focus-high
+);
+  
+// MERGE THE MAP
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// FONT VARIABLES 
+$font-size-fluid-0: clamp(.75em, 1.5vw, 1em);
+$font-size-fluid-1: clamp(1em, 2vw, 1.2em);
+$font-size-fluid-2: clamp(1.5em, 3vw, 2em);
+$font-size-fluid-3: clamp(2.5em, 4vw, 3em);
+
+
+
+
+
+
+// IMPORT NODE_MODULES SCSS FILE
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+

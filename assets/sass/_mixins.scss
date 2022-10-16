@@ -1,0 +1,22 @@
+
+@mixin fs-xl {
+    font-size: $font-size-fluid-3;
+    font-weight: 400;
+}
+
+@mixin fs-lg {
+    font-size: $font-size-fluid-2;
+    font-weight: 400;
+}
+
+@mixin fs-md {
+    font-size: $font-size-fluid-1;
+    font-weight: 400;
+}
+
+@mixin fs-sm {
+    font-size: $font-size-fluid-0;
+    font-weight: 400;
+}
+
+
